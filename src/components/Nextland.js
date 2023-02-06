@@ -13,7 +13,7 @@ class Nextland extends React.Component {
     handleBut(event){
         event.preventDefault();
         alert("submitted!");
-        window.location.href='http://localhost:3000/App';
+        window.location.href='/App';
     }
    render(){
   return (

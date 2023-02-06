@@ -10,7 +10,9 @@ class Nextland extends React.Component {
     //     e.preventDefault();
     //   this.props.push('/App');
     // }
-    handleBut(){
+    handleBut(event){
+        event.preventDefault();
+        alert("submitted!");
         window.location.href='http://localhost:3000/App';
     }
    render(){
@@ -36,7 +38,7 @@ class Nextland extends React.Component {
             <img src='images/bglassf1.png' alt='oops!' width={"128%"} height="352px"></img>
             </div>
             <div className='n6'>
-            <form action='http://localhost:3000/App' >
+            <form onSubmit={this.handleBut}>
             <label>
             <h4><b>Please enter your mobile no.</b></h4>
             </label>
@@ -50,9 +52,10 @@ class Nextland extends React.Component {
                 />
              
             <h3><span><input type='checkbox' required/></span>  PLEASE CONFIRM <br/>IF YOU ARE ABOVE LEGAL DRINKING</h3>
-      
+         
           <div className='b'>
-         <button>NEXT</button>
+          
+          <input type='submit' value='NEXT'></input>
         
            </div>
             </form>

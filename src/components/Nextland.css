@@ -99,6 +99,9 @@ label{
 .b{
     padding-top: 3%;
 }
+.b input{
+    padding: 4% 10%;
+}
 #second{
     display: none;
 }

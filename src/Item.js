@@ -26,7 +26,7 @@ const itemSource = {
 
   console.log(count);
     if (count==4){
-      window.location.href='./Lose?id='+Item.value;
+      window.location.href='./Lose';
     }
     if (attempt==1){
       window.location.href='./try1left';

@@ -26,16 +26,16 @@ const itemSource = {
 
   console.log(count);
     if (count==4){
-      window.location.href='http://localhost:3000/Lose';
+      window.location.href='/Lose';
     }
     if (attempt==1){
-      window.location.href='http://localhost:3000/try1left';
+      window.location.href='/try1left';
     }
     if (attempt==2){
-      window.location.href='http://localhost:3000/try2left';
+      window.location.href='/try2left';
     }
     if (attempt==3){
-      window.location.href='http://localhost:3000/win';
+      window.location.href='/win';
     }
     return props.handleDrop(props.item.id);
   },

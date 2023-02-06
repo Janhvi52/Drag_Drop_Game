@@ -59,18 +59,25 @@ class App extends Component {
             </h3>
           </div>
         </header>
+        <div className="rule">  
+        <h4>Rule⚖️: Drag and Drop the ingredients in sequence starting from top!</h4>
+        </div>
+      
         <div className="first">
           <Target/>
+         
         <div className="App-intro">
+      
           <div className="app-container">
             <div className="item-container">
-            
+           
               {this.state.items.map((item,index) => (
                 <Item key={item.id} item={item} 
                   handleDrop={(id) => this.deleteItem(id)}
                 />
                 
               ))}
+             
           </div>
         </div>
         </div>

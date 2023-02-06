@@ -92,6 +92,7 @@ class Item extends Component {
        {name}
        </div>
       </div>
+      
     );
   }
 }

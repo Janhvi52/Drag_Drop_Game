@@ -83,5 +83,9 @@ justify-items:center;
     top: 0.5%;
     left: 25%;
   }
-
+  
+.App-intro{
+  display: flex;
+  justify-content: space-around;
+}
 }

@@ -20,21 +20,21 @@ class App extends Component {
       { id: 5,url:"images/bgorange.png"},
       { id: 6,name:"Garnishes",url:"/images/lemon.png"}
     ],
-   backends:[
-    {
-      id:'html5',
-      backend: HTML5Backend,
-      transition: MouseTransition,
-    },
+  //  backends:[
+  //   {
+  //     id:'html5',
+  //     backend: HTML5Backend,
+  //     transition: MouseTransition,
+  //   },
     
-      {
-        id:'touch',
-        backend: TouchBackend,
-        options:{enableMouseEvents : true},
-        preview:true,
-        transition: TouchTransition,
-      },
-   ]
+  //     {
+  //       id:'touch',
+  //       backend: TouchBackend,
+  //       options:{enableMouseEvents : true},
+  //       preview:true,
+  //       transition: TouchTransition,
+  //     },
+  //  ]
   };
 
     deleteItem = (id) => {

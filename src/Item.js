@@ -19,22 +19,22 @@ const itemSource = {
       return;
     }
    
-    (props.item.id == 6 && props.item.id != 5 && !props.item.id != 4 && !props.item.id != 3 && !props.item.id != 2 && !props.item.id != 1 )?
-    count=4:((props.item.id == 1)?
-    count=0:((props.item.id == 2)?count=0:((props.item.id == 4)?count=0:((props.item.id == 3)?
-    attempt=1:((props.item.id == 5)?attempt=2:attempt=3)))));
+    (props.item.id === 6 && props.item.id !== 5 && !props.item.id !== 4 && !props.item.id !== 3 && !props.item.id !== 2 && !props.item.id !== 1 )?
+    count=4:((props.item.id === 1)?
+    count=0:((props.item.id === 2)?count=0:((props.item.id === 4)?count=0:((props.item.id === 3)?
+    attempt=1:((props.item.id === 5)?attempt=2:attempt=3)))));
 
   console.log(count);
-    if (count==4){
+    if (count===4){
       window.location.href='./Lose';
     }
-    if (attempt==1){
+    if (attempt===1){
       window.location.href='./try1left';
     }
-    if (attempt==2){
+    if (attempt===2){
       window.location.href='./try2left';
     }
-    if (attempt==3){
+    if (attempt===3){
       window.location.href='./win';
     }
     return props.handleDrop(props.item.id);

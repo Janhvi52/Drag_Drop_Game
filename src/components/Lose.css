@@ -8,12 +8,13 @@
 }
 .next{
     color: white;
-    
-    margin-top: 4%;
+    margin-top: 12%;
     background-color:rgb(143, 20, 20);
     display: flex;
     justify-content: space-around;
+  
     line-height: 155%;
+ 
 }
 .right{
     padding-top: 1%;
@@ -26,4 +27,15 @@ font-size: 18px;
 }
 #mid{
     padding: 1%;
+}
+@media screen and (max-width:500px) {
+    .right{
+        padding: 2%;
+        text-align: center;
+       
+    }
+    .next{
+        width: 600px;
+        height: 500px;
+    }
 }

@@ -10,8 +10,8 @@ position: relative;
 }
 @media screen and (max-width:1200px) {
     .text-under-image{
-        top: 32%;
-        left: 37%;
+        top: 29%;
+        left: 38.5%;
         font-size: 10px;
     }
 }

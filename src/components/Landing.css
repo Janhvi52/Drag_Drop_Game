@@ -14,6 +14,8 @@ h4{
   text-align: center;
 }
 body{
+    width: 100%;
+    height: 100vh;
     background: url('./texturepaper.jpg');
 }
 .header-top{
@@ -73,3 +75,9 @@ h1>h6>i{
 .header-next{
     text-align: center;
 }
+@media screen and (max-width:700px) {
+    .image-sec>img{
+     width: 122%;
+     height: 392px;
+    }
+ }

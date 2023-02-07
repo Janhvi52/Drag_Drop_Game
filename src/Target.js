@@ -50,7 +50,8 @@ class Target extends Component {
                 image:"images/bglass.png"
               })
             }}
-            ></img>     <div className='text-under-image'>
+            ></img>    
+            <div className='text-under-image'>
     <h6 > ESTD 1886</h6>
     <h3>ROYAL CHALLENGE</h3>
     <h2>AMERICAN</h2>

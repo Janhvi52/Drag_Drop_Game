@@ -3,7 +3,10 @@ import "./App.css";
 import Item from "./Item";
 import Target from "./Target";
 import header from "./images/bgheader.png";
-import HTML5Backend from "react-dnd-html5-backend";
+import {HTML5toTouch} from 'rdndmb-html5-to-touch';
+import HTML5Backend from 'react-dnd-html5-backend';
+import {TouchBackend} from 'react-dnd-touch-backend';
+import {MouseTransition,TouchTransition, MultiBackend} from "react-dnd-multi-backend";
 import { DragDropContext, DropTarget } from "react-dnd";
 const update = require("immutability-helper");
 
@@ -17,14 +20,21 @@ class App extends Component {
       { id: 5,url:"images/bgorange.png"},
       { id: 6,name:"Garnishes",url:"/images/lemon.png"}
     ],
-    // combo: [
-    //   { id: 1,name:"Ice Cubes",url:"/images/icecube.png"},
-    //   { id: 2,name:"Whisky", url: "/images/bgwhiskey.png" },
-    //   { id: 4,url:"/images/bgsoda.png"},
-    //   { id: 6,url:"/images/lemon.png"}
-    // ],
-    // attempts:0,
-    // message: '',
+   backends:[
+    {
+      id:'html5',
+      backend: HTML5Backend,
+      transition: MouseTransition,
+    },
+    
+      {
+        id:'touch',
+        backend: TouchBackend,
+        options:{enableMouseEvents : true},
+        preview:true,
+        transition: TouchTransition,
+      },
+   ]
   };
 
     deleteItem = (id) => {
@@ -87,7 +97,7 @@ class App extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(App);
+export default DragDropContext(TouchBackend)(App);
 
 
                 // items:prevState.items.filter((item.id==1 && item.id==2 && item.id==4 && item.id==6)?<Landing/>:<Win/>)
